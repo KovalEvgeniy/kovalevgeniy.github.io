@@ -79,7 +79,7 @@ const CartItem = ({product}) => {
 				<div className="cart-cross">
 					<button onClick={() => removeProduct(product)} className="btn-icon">&times;</button>
 				</div>
-				<div className="cart-title">{product.N}</div>
+				<div className="cart-title">{product.group ? product.group + '. ' : ''}{product.N}</div>
 			</div>
 			<div className="cart-quantity">
 				<div className="cart-quantity__top">

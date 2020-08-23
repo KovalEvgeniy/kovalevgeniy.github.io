@@ -20,8 +20,8 @@ const CartContextProvider = ({children}) => {
 		dispatch({type: 'DECREASE', payload})
 	};
 
-	const addProduct = payload => {
-		dispatch({type: 'ADD_ITEM', payload})
+	const addProduct = (payload, group) => {
+		dispatch({type: 'ADD_ITEM', payload, group})
 	};
 
 	const removeProduct = payload => {

@@ -17,7 +17,7 @@ const App = () => {
 
 					<h2>Список товаров</h2>
 					<div className="product-list">
-						{loading && !errorMessage ? (
+						{!loading && !errorMessage ? (
 							<span>loading... </span>
 						) : errorMessage ? (
 							<div className="errorMessage">{errorMessage}</div>
