@@ -1,0 +1,68 @@
+.shopping-cart {
+	position: relative;
+	padding: 15px;
+	box-shadow: 0 7px 19px 1px rgba(13,33,104,.15);
+
+	&__title {
+		font-size: 25px;
+		padding: 0 10px 20px;
+		font-weight: 700;
+	}
+
+	&__head {
+		display: flex;
+	}
+}
+
+/* Totals section */
+.totals {
+	&__item {
+		display: flex;
+		margin-bottom: 10px;
+
+		&--bold {
+			font-weight: bold;
+		}
+	}
+
+	&__title {
+		width: 79%;
+		text-align: right;
+	}
+
+	&__value {
+		width: 21%;
+		text-align: right;
+
+		&--orange {
+			color: #ff9900;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.shopping-cart {
+		&__head {
+			display: none;
+		}
+	}
+
+	.totals {
+		&__item {
+			flex-wrap: wrap;
+		}
+
+		&__title {
+			width: 100%;
+			text-align: left;
+		}
+
+		&__value {
+			width: 100%;
+			text-align: left;
+		}
+	}
+}
+
+
+

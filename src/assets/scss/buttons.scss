@@ -1,0 +1,50 @@
+.btn {
+	border: 1px solid rgba(0, 0, 0, 0.104);
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.104);
+	color: #000000;
+	font-size: 12px;
+	transition: background-color 150ms, color 150ms;
+	cursor: pointer;
+	border-radius: 0;
+	outline: none;
+
+	&:hover {
+		background-color: #ff443f;
+		color: #ffffff;
+	}
+}
+
+.btn-link {
+	border: none;
+	background-color: transparent;
+	margin: 0;
+	padding: 2px 4px;
+	color: #000000;
+	cursor: pointer;
+	font-size: 12px;
+	outline: none;
+	transition: color 150ms;
+
+	&:hover {
+		color: #ff443f;
+	}
+}
+
+.btn-icon {
+	border: none;
+	background-color: transparent;
+	margin: 0;
+	padding: 4px;
+	color: #000000;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+	font-weight: 700;
+	line-height: 1;
+	transition: color 150ms;
+
+	&:hover {
+		color: #ff443f;
+	}
+}

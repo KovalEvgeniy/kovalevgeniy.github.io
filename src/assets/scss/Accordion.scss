@@ -1,0 +1,35 @@
+.accordion {
+	position: relative;
+	margin-bottom: 10px;
+
+	&__title {
+		position: relative;
+		background: #eeeeee;
+		margin-bottom: -1px;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		text-align: left;
+		cursor: pointer;
+		font-weight: 400;
+		font-size: 18px;
+		padding: 10px 15px;
+
+		&.is-toggle {
+			transition: background .5s;
+			background: #dedede;
+		}
+	}
+
+	&__content {
+		overflow: hidden;
+		max-height: 0;
+		margin: 0;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-top: 0;
+		transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&.is-toggle {
+			//max-height: 600px;
+			max-height: 100%;
+		}
+	}
+}
